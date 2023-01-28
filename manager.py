@@ -6,7 +6,7 @@
 from Identificator import Identificator
 
 if __name__ == '__main__':
-    sampleURI = "visma-identity://login?source=severa"
+    sampleURI = "visma-identity://confirm?source=netvisor&paymentnumber=102226"
     identity = Identificator(sampleURI)
 
     # None in case of an invalid path
