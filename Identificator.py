@@ -88,6 +88,11 @@ class Identificator:
             print(f"Parsing failed. Make sure that the given argument is a valid string.")
             return None
 
+        except IndexError:
+            self.path, self.params = None, None
+            print(f"Validation failed. Make sure that the given params are valid.")
+            return None
+
     def get_path(self):
         return self.path
 
